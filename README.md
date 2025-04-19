@@ -1,6 +1,22 @@
 # そうだ Next.js 13でDependency Injection、しよう。 の写経
 https://zenn.dev/yopiidev/articles/2856be7274215c
 
+## DIに必要パッケージのインストール
+```
+npm install inversify reflect-metadata
+```
+
+tsconfig.json の調整
+```
+{
+  "compilerOptions": {
+    // ...
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    // ...
+  },
+}
+```
 
 
 
